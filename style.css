@@ -1,0 +1,131 @@
+main {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+
+}
+
+
+.content1 {
+    background-color: rgb(21, 255, 0);
+    animation-name: change-color-c1;
+    animation-duration: 999ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes change-color-c1 {
+    from {
+        background-color: rgb(255, 0, 0);
+    }
+
+    to {
+        background-color: rgb(128, 255, 0);
+    }
+}
+
+.content2 {
+    background-color: rgb(255, 0, 179);
+    animation-name: change-color-c2;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes change-color-c2 {
+    from {
+        background-color: rgb(255, 0, 208);
+    }
+
+    to {
+        background-color: rgb(81, 255, 0);
+    }
+}
+
+.content3 {
+    background-color: rgb(255, 0, 204);
+    animation-name: change-color-c3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes change-color-c3 {
+    from {
+        background-color: rgb(81, 255, 0);
+    }
+
+    to {
+        background-color: rgb(255, 0, 208);
+    }
+}
+
+.box_content {
+    width: 190px;
+    height: 190px;
+    background-color: rgb(210, 10, 10);
+    margin: 90px;
+    position: relative;
+    display: flex;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.circle-content {
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+    border-radius: 50%;
+    margin: 90px;
+    display: flex;
+    animation-name: change-color;
+    animation-duration: 450ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.tri-content {
+    width: 0;
+    height: 0;
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+    border-bottom: 190px solid orange;
+    margin: 90px;
+    display: flex;
+    animation-name: rotate;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+}
+
+.para-content {
+    width: 100px;
+    height: 70px;
+    transform: skew(30deg);
+    background-color: green;
+}
+
+@keyframes spin {
+    50% {
+        transform: rotate(4320deg);
+    }
+}
+
+@keyframes change-color {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+
+@keyframes rotate {
+    50% {
+        transform: rotate(1080deg);
+    }
+}
